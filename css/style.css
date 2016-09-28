@@ -4,13 +4,11 @@
 }
 body{
 	min-width: 1330px;
-	/*background-color: #d8ddd9;*/
 }
 	
 .wrap-head{
 	width: 1070px;
 	margin: 0 auto;
-	/*background-color: #ffffff;*/
 }
 .head{
 	margin: 0 auto;
@@ -35,28 +33,34 @@ body{
 .nav ul li{
 	float: left;
 	list-style: none;
-    width: 130px;
-    height: 20px;
+    width: 130px;       
+    height: 22px;
     font-family: 微软雅黑;
     font-size: 16px;
     text-align: center; 
     border-right: 1px solid #7e8286;
     margin-top: 3px;
-    
-}
-#homepage{
+ }
+.nav ul li.homepage{
 	 width: 100px; 
 	 height: 22px;
      border-bottom: 5px solid #1b7819;
      border-right: none;
     }
-#li-intro{border-left:1px solid #7e8286; }
-#contact-us{
-	border-right: none;
+.li-intro{border-left:1px solid #7e8286 !important; }
+.contact-us{
+	border-right: none !important;
 }    
 .nav ul li a{
 	text-decoration: none;
 	color: #7e8286;
+}
+.nav ul li a:hover{ 
+	color:#1b7819；
+ }
+ .nav ul li:hover
+{
+     border-bottom: 5px solid #1b7819;
 }
                 /*中间主体内容*/
 .container{
@@ -106,12 +110,18 @@ body{
     padding-left: 30px; 
 }
 .login-content img{float: left;margin-top: 10px; }
-.login-content p{
+.login-content a{
 	float: left;
-	font-style: 宋体;
+	font-family: 宋体;
 	font-size: 14px;
 	line-height: 50px;
 	margin-left: 8px;
+	text-decoration: none;
+	color: #000;
+}
+.login-content a:hover{
+    color:#1a7018; 
+    font-weight: bolder;   
 }
 .main-up-right{
 	height: 225px;
@@ -125,7 +135,13 @@ body{
 .main-up-right img{
 	height: 225px;
 	width: 698px;
-
+}
+.main-up-right .tab{
+	width: 100px;
+	height: 20px;
+	position: relative;
+    top: -28px;
+    left: 295px;
 }
 .content-middle-border{
 	width: 342px;
@@ -140,28 +156,32 @@ body{
     height: 30px;
 	background-color: #eae8e6;
 }
-.title p{
-	font-style: 宋体;
+.title h2{
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
 	text-indent: 1em;
+	float: left;
 }
-.title p a {
-	line-height: 30px;
-	margin-left: 180px;          /* ??margin-right: 50px; */
-	text-decoration: none;
-	color: #000000;
+.title a{
+	 line-height: 30px;
+	 float: right;
+	 text-decoration: none;
+	 color: #000000;
+	 margin-right: 18px;
 }
+.title a:hover{color:#0c0; }
+.news li{list-style: none;}
 .news a {
-	font-style: 宋体;        /* ????*/
+	font-family: 宋体;       
 	font-size: 14px;
 	color: #000000;
 	line-height: 25px;
-	/*margin-top: 8px;*/
 	margin-left: 16px;
 	float: left;
 	text-decoration: none;
 }
+.news a:hover{color:#1a7018; }
 .news time {
 	float: right;
 	font-style: 宋体;        
@@ -180,19 +200,20 @@ body{
 	border:1px solid #1b7819;
 	clear: both;
 }
-.foot-link p{
+.foot-link ul li{
 	line-height: 23px;
 	color: #666666;
 	font-family: 宋体;
 	font-size: 12px;
-	margin-left: 20px;
+	margin-left: 18px;
+	list-style: none;
+	float: left;
 }
-.foot-link p a{
+.foot-link ul li a{
         text-decoration: none;
-        margin-left: 10px;
         color: #666666;
-
 }
+.foot-link ul li a:hover{ color:#1a7018; font-weight: bold;}
 .copyright{
 	width: 1060;
 	height: 23px;
@@ -201,4 +222,5 @@ body{
 	font-family: 宋体;
 	font-size: 12px;
 	line-height: 23px;
+	clear: both;
 }
